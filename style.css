@@ -47,6 +47,61 @@ main {
     height: 500px;
 }
 
+.symbols-section {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+button {
+    padding: 15px 40px;
+    border-radius: 8px;
+    border: 1px solid white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.delete-btn,
+.plus-btn,
+.minus-btn,
+.divide-btn,
+.times-btn{
+    border: 1px solid rgb(131, 131, 245);;
+    background: rgb(131, 131, 245);
+    color: white;
+    padding: 20px 38px;
+    font-size: 23px;
+}
+
+.dot-btn {
+    padding: 15px 45px;
+}
+
+.divide-btn {
+    padding: 20px 46px;
+}
+
+.times-btn {
+    padding: 20px 41px;
+}
+
+.minus-btn {
+    padding: 20px 42px;
+}
+
+.reset-btn {
+    padding: 10px 78px;
+    background: rgb(142, 142, 197);
+    border: 1px solid rgb(142, 142, 197);
+}
+
+.equals-btn {
+    padding: 10px 102px;
+    background: rgb(226, 102, 102);
+    border: 1px solid rgb(226, 102, 102);;
+}
 
 /*FOOTER*/
 footer{
