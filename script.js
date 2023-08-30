@@ -23,5 +23,28 @@ function divide (divNumber1, divNumber2) {
 
 
 let firstNumber = 3
+let operator = "+"
 let secondNumber = 5
 
+function operate (firstNumber, operator, secondNumber) {
+    switch(operator) {
+        case "+":
+            output = add(firstNumber, secondNumber)
+            break;
+        
+        case "-":
+            output = subtract(firstNumber, secondNumber)
+            break;
+        
+        case "*":
+            output = multiply(firstNumber, secondNumber)
+            break;
+        
+        case "/":
+            output = divide(firstNumber, secondNumber)
+            break;
+    }
+    return output
+}
+
+console.log(operate(5,"+",5))
