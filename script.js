@@ -69,7 +69,7 @@ function operate (firstNumber, operator, secondNumber) {
 
 function numbers () {
 number0_DOM.addEventListener("click", function() {
-    input_DOM.textContent += "0"
+    input_DOM.textContent += "0" 
 })
 
 number1_DOM.addEventListener("click", function() {
@@ -109,6 +109,8 @@ number9_DOM.addEventListener("click", function() {
 })
 }
 
+numbers()
+
 
 function symbols () {
 plus_DOM.addEventListener("click", function() {
@@ -131,10 +133,10 @@ dot_DOM.addEventListener("click", function() {
     input_DOM.textContent += "."
 })
 }
-let operatorrr = symbols()
+symbols()
+
 
 delete_DOM.addEventListener("click", function() {
     input_DOM.textContent = input_DOM.textContent.slice(0, -1);
 })
 
-operate(5, operatorrr, 5)
