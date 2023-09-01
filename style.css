@@ -64,10 +64,10 @@ button {
 }
 
 .delete-btn,
-.plus-btn,
-.minus-btn,
-.divide-btn,
-.times-btn{
+#plus-btn,
+#minus-btn,
+#divide-btn,
+#times-btn{
     border: 1px solid rgb(131, 131, 245);;
     background: rgb(131, 131, 245);
     color: white;
@@ -79,15 +79,15 @@ button {
     padding: 15px 45px;
 }
 
-.divide-btn {
+#divide-btn {
     padding: 20px 44px;
 }
 
-.times-btn {
+#times-btn {
     padding: 20px 41px;
 }
 
-.minus-btn {
+#minus-btn {
     padding: 20px 42px;
 }
 
