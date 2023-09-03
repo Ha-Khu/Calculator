@@ -1,5 +1,5 @@
-let numbers = document.querySelectorAll(".number")
-let operators = document.querySelectorAll(".operator")
+let numbers_DOM = document.querySelectorAll(".number")
+let operators_DOM = document.querySelectorAll(".operator")
 let dot_DOM = document.querySelector(".dot-btn");
 let equals_DOM = document.querySelector(".equals-btn");
 let delete_DOM = document.querySelector(".delete-btn");
@@ -7,7 +7,25 @@ let reset_DOM = document.querySelector(".reset-btn");
 let input_DOM = document.querySelector(".input-numbers");
 
 
+numbers_DOM.forEach((number) => number.addEventListener("click", function(e) {
+    handleNumber(e.target.textContent)
+}))
 
+function handleNumber(num) {
+    console.log(num)
+}
+
+operators_DOM.forEach((operator) => operator.addEventListener("click", function(e) {
+    handleNumber(e.target.textContent)
+}))
+
+function handleNumber(operate) {
+    operators = operate
+}
+
+let Number1 = ""
+let operators = ""
+let Number2 = ""
 
 function add (addNumber1, addNumber2) {
     let sum = addNumber1 + addNumber2
@@ -52,14 +70,14 @@ function operate (firstNumber, operator, secondNumber) {
     return output
 }
 
-let Number1 = ""
-let operator = ""
-let Number2 = ""
+
+
 
 
 
 
 /*
+
 function numbers () {
 number0_DOM.addEventListener("click", function() {
     input_DOM.textContent += "0" 
@@ -128,9 +146,8 @@ dot_DOM.addEventListener("click", function() {
 }
 symbols()
 
-
+*/
 delete_DOM.addEventListener("click", function() {
     input_DOM.textContent = input_DOM.textContent.slice(0, -1);
 })
 
-*/
